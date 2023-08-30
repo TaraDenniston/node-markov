@@ -51,7 +51,7 @@ class MarkovMachine {
     text += currentWord;
 
     let i = 0;
-    while (i < numWords) {
+    while (i < (numWords - 1)) {
       // find all words that can come after that word
       let possibilities = this.chains.get(currentWord);      
 
